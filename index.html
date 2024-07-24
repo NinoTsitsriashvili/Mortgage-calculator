@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="left">
+        <div class="texts1">
+          <div class="title">
+            <span class="h1">Mortgage Calculator</span>
+            <span class="h2">Clear All</span>
+          </div>
+          <div class="amount">
+            <span class="amount_text">Mortgage Amount</span>
+            <!-- <span class="currency-icon">$</span> -->
+            <input type="text" class="amount_field" />
+          </div>
+
+          <div class="two_fields">
+            <div class="term_block">
+              <span class="term_text">Mortgage Term</span>
+              <input type="text" class="term_input" />
+            </div>
+            <div class="rate_block">
+              <span class="rate_text">Interest Rate</span>
+              <input type="text" class="rate_input" />
+            </div>
+          </div>
+
+          <div class="radio_block">
+            <span class="radio_text">Mortgage Type</span>
+            <div class="radio-buttons">
+              <div class="first_option">
+                <label>
+                  <input
+                    type="radio"
+                    name="mortgageType"
+                    value="repayment"
+                    checked
+                  />
+                  <span class="radio_style">Repayment</span>
+                </label>
+              </div>
+
+              <div class="second_option">
+                <label>
+                  <input
+                    type="radio"
+                    name="mortgageType"
+                    value="interestOnly"
+                  />
+                  <span class="radio_style">Interest Only</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="submit_button">
+            <button class="calculate_button">
+              <img src="assets/images/icon-calculator.svg" alt="" />
+              Calculate Repayments
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="rightContainer">
+          <img src="assets/images/illustration-empty.svg" alt="" />
+          <div class="texts2">Results shown here</div>
+          <div class="description">
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </div>
+        </div>
+
+        <div class="rightSecond">
+          <div class="secondContainer">
+            <div class="topPart">
+              <span class="texts3">Your Results</span>
+              <span class="resultDescription">
+                Your results are shown base on the information you provided. To
+                adjust results, edit from and click "Calculate repayments"
+                again.</span
+              >
+            </div>
+            <div class="monthlyRepayment">
+              <span class="repaymentTitle">Your monthly repayments </span>
+              <span class="repaymenAmount">£ 888</span>
+              <span class="repaytext1">Total you'll repay over the term</span>
+              <span class="monthlyTotal">£ 777</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

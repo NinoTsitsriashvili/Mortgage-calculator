@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: hsl(202, 86%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 1024px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+
+.left {
+  height: 600px;
+  width: 50%;
+  border-radius: 30px;
+  border-radius: 30px 0px 0px 30px;
+}
+.right {
+  height: 600px;
+  width: 50%;
+  background-color: hsl(202, 55%, 16%);
+  border-radius: 0 30px 30px 80px;
+}
+
+.rightContainer {
+  display: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.texts1 {
+  padding: 40px 40px 20px 40px;
+}
+
+.texts2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  padding: 10px;
+  color: hsl(202, 86%, 94%);
+}
+
+.description {
+  display: flex;
+  text-align: center;
+  padding-left: 75px;
+  padding-right: 75px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  color: hsl(203, 41%, 72%);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: hsl(202, 55%, 16%);
+}
+
+.h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+  color: hsl(200, 24%, 40%);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.h2:hover {
+  color: hsl(200, 24%, 30%);
+}
+
+.amount {
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.amount_text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsl(200, 24%, 40%);
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.amount_field {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  outline: 1.2px solid hsl(200, 26%, 54%);
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.amount_field:focus {
+  outline: 1.2px solid hsl(202, 55%, 16%);
+}
+
+.two_fields {
+  padding-top: 1px;
+  display: flex;
+  padding: 0;
+}
+
+.term_block {
+  padding-right: 25px;
+  padding-bottom: 35px;
+}
+.term_text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsl(200, 24%, 40%);
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.term_input {
+  height: 50px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  outline: 1.2px solid hsl(200, 26%, 54%);
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.term_input:focus {
+  outline: 1.2px solid hsl(202, 55%, 16%);
+}
+
+.rate_text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsl(200, 24%, 40%);
+  font-size: 20px;
+}
+
+.rate_input {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  outline: 1.2px solid hsl(200, 26%, 54%);
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.rate_input:focus {
+  outline: 1.2px solid hsl(202, 55%, 16%);
+}
+
+.radio_text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsl(200, 24%, 40%);
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.radio-buttons {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.radio_style {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.submit_button {
+  padding-top: 30px;
+  width: 70%;
+}
+
+.calculate_button {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 60px;
+  border: none;
+  padding: 15px 50px 15px 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: hsl(61, 70%, 52%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.calculate_button:hover {
+  background-color: hsl(61, 70%, 42%);
+}
+
+.first_option {
+  outline: 1.2px solid hsl(200, 26%, 54%);
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.second_option {
+  outline: 1.2px solid hsl(200, 26%, 54%);
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.secondContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.topPart {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  margin: 40px;
+}
+
+.texts3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  padding: 10px;
+  color: hsl(202, 86%, 94%);
+}
+
+.resultDescription {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  color: hsl(203, 41%, 72%);
+}
+
+.monthlyRepayment {
+  width: 85%;
+  height: 85%;
+  background-color: hsl(202, 56%, 12%);
+  border-top: 4.2px solid hsl(61, 70%, 52%);
+  border-bottom: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rightSecond {
+  display: none;
+}
+
+.repaymentTitle {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsl(203, 41%, 72%);
+  padding: 15px;
+}
+
+.repaymenAmount {
+  color: hsl(61, 70%, 52%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 65px;
+  padding-left: 15px;
+}
+
+.repaytext1 {
+  color: hsl(203, 41%, 72%);
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.monthlyTotal {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 15px;
+  color: hsl(202, 86%, 94%);
+}
